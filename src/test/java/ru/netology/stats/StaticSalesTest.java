@@ -46,9 +46,9 @@ public class StaticSalesTest {
     public void StaticSalesTestMonthHighAverage() {
         StatsService MonthHighAveragetest = new StatsService();
 
-        int HighAveragetest = MonthHighAveragetest.MonthHighAverage(sales);
+        int highAveragetest = MonthHighAveragetest.MonthHighAverage(sales);
 
-        System.out.println("Количество месяцев, в которых продажи выше среднего = " + HighAveragetest);
+        System.out.println("Количество месяцев, в которых продажи выше среднего = " + highAveragetest);
 
     }
 
@@ -56,9 +56,9 @@ public class StaticSalesTest {
     public void StaticSalesTestMonthUnderAverage() {
         StatsService MonthUnderAveragetest = new StatsService();
 
-        int UnderAveragetest = MonthUnderAveragetest.MonthUnderAverage(sales);
+        int underAveragetest = MonthUnderAveragetest.MonthUnderAverage(sales);
 
-        System.out.println("Количество месяцев, в которых продажи ниже среднего = " + UnderAveragetest);
+        System.out.println("Количество месяцев, в которых продажи ниже среднего = " + underAveragetest);
 
     }
 
@@ -66,9 +66,9 @@ public class StaticSalesTest {
     public void StaticSalesTestMonthEquallyAverage() {
         StatsService MonthEquallyAveragetest = new StatsService();
 
-        int EquallyAveragetest = MonthEquallyAveragetest.MonthEquallyAverage(sales);
+        int equallyAveragetest = MonthEquallyAveragetest.MonthEquallyAverage(sales);
 
-        System.out.println("Количество месяцев, в которых средние продажи = " + EquallyAveragetest);
+        System.out.println("Количество месяцев, в которых средние продажи = " + equallyAveragetest);
 
     }
 }

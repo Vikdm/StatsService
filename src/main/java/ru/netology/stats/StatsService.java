@@ -13,11 +13,7 @@ public class StatsService {
 
     public int average(int[] sales) {
 
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-
+        int sum = sum(sales);
         int average = sum / 12;
         return average;
     }
@@ -46,50 +42,35 @@ public class StatsService {
 
     public int MonthHighAverage(int[] sales) {
 
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int average = sum / 12;
-
-        int HighAverage = 0;
+        int average = average(sales);
+        int highAverage = 0;
         for (int sale : sales) {
             if (sale > average)
-                HighAverage++;
+                highAverage++;
         }
-        return HighAverage;
+        return highAverage;
     }
 
     public int MonthUnderAverage(int[] sales) {
 
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int average = sum / 12;
-
-        int UnderAverage = 0;
+        int average = average(sales);
+        int underAverage = 0;
         for (int sale : sales) {
             if (sale < average)
-                UnderAverage++;
+                underAverage++;
         }
-        return UnderAverage;
+        return underAverage;
     }
 
     public int MonthEquallyAverage(int[] sales) {
 
-        int sum = 0;
-        for (int sale : sales) {
-            sum += sale;
-        }
-        int average = sum / 12;
-
-        int EquallyAverage = 0;
+        int average = average(sales);
+        int equallyAverage = 0;
         for (int sale : sales) {
             if (sale == average)
-                EquallyAverage++;
+                equallyAverage++;
         }
-        return EquallyAverage;
+        return equallyAverage;
     }
 
 }
